@@ -1,0 +1,66 @@
+.container {
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.studentCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f7f7;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.info {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.editBtn,
+.deleteBtn {
+  padding: 6px 14px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.2s ease-in-out;
+}
+
+/* Edit button */
+.editBtn {
+  background-color: #1f74e2;
+  color: white;
+}
+
+.editBtn:hover {
+  background-color: #145bb3;
+}
+
+/* Delete button */
+.deleteBtn {
+  background-color: #e64040;
+  color: white;
+}
+
+.deleteBtn:hover {
+  background-color: #b82525;
+}
+
+.container{
+    align-items: center;
+    text-align: center;
+    padding: 0 15% 0 15%;
+    margin-top: 3%;
+}
