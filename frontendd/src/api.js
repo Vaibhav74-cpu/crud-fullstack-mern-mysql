@@ -1,10 +1,9 @@
 import axios from "axios";
-import dotenv from 'dotenv';
-dotenv.config()
+
 
 const API = axios.create({
-  baseURL: process.env.baseURL,
-  timeout: process.env,tim
+  baseURL: import.meta.env.VITE_BASE_URL,
+  timeout: Number(import.meta.env.VITE_TIMEOUT)
 });
 
 export const fetchStudents = () => API.get("/students");

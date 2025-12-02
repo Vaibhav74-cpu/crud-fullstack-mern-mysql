@@ -6,7 +6,13 @@ import studentRoutes from "./routes/studentRoutes.js";
 dotenv.config();
 
 const app = express();
-app.use(cors());
+// app.use(cors());
+app.use(
+  cors({
+    origin: process.env.origin,
+  })
+);
+
 app.use(express.json());
 
 app.use("/api/students", studentRoutes);
