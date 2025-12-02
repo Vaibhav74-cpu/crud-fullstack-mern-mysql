@@ -1,10 +1,9 @@
 import axios from "axios";
 
-
 const API = axios.create({
-  baseURL: import.meta.env.VITE_BASE_URL,
-  timeout: Number(import.meta.env.VITE_TIMEOUT)
-});
+  baseURL: `${import.meta.env.VITE_BACKEND_URL}/api`,
+  timeout: 5000,
+}); 
 
 export const fetchStudents = () => API.get("/students");
 export const fetchStudent = (id) => API.get(`/students/${id}`);
