@@ -1,8 +1,10 @@
 import axios from "axios";
+import dotenv from 'dotenv';
+dotenv.config()
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
-  timeout: 5000,
+  baseURL: process.env.baseURL,
+  timeout: process.env,tim
 });
 
 export const fetchStudents = () => API.get("/students");
